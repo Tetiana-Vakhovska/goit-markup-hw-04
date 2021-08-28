@@ -41,6 +41,11 @@ body {
 .social-networks-size {
   width: 44px;
   height: 44px;
+  color: #afb1b8;
+}
+.social-networks-size:hover,
+.social-networks-size:focus {
+  color: var(--accent-color);
 }
 .client {
   display: flex;
@@ -48,9 +53,17 @@ body {
 .client-item:not(:last-child) {
   margin-right: 30px;
 }
-.client-size {
+.clent-item {
+}
+.client-icon {
   width: 170px;
   height: 92px;
+  border: 1px solid #afb1b8;
+  fill: #afb1b8;
+}
+.client-example:hover .client-icon {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
 }
 p,
 h1,
