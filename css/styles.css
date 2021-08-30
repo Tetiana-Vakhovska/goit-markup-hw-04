@@ -55,17 +55,23 @@ body {
 .social-networks-item:not(:last-child) {
   margin-right: 10px;
 }
+.social-networks-item {
+  width: 44px;
+  height: 44px;
+}
+
 .social-networks-size {
   width: 20px;
   height: 20px;
-  color: #afb1b8;
+  fill: #afb1b8;
 }
-
-.social-networks-link:hover svg,
-.social-networks-link:focus svg {
+.social-networks-size:hover {
+  fill: var(--primary-white-color);
+}
+.social-networks-item:hover {
   background-color: var(--accent-color);
+  border-radius: 50%;
 }
-
 .client {
   display: flex;
 }
@@ -189,6 +195,10 @@ img {
   width: 370px;
   height: 404px;
 }
+.portfolio-list-item:hover,
+.portfolio-list-item:focus {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
 .img {
   display: block;
   width: 370px;
@@ -274,6 +284,8 @@ img {
 .secondary-button:focus {
   color: var(--primary-white-color);
   background: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .secondary-button-title {
   display: flex;
@@ -350,4 +362,10 @@ img {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+.footer-design {
+  display: flex;
+}
+.footer-design-item:not(:last-child) {
+  margin-right: 70px;
 }
