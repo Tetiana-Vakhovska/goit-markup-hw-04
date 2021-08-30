@@ -20,39 +20,45 @@ body {
 .envelope-size {
   width: 16px;
   height: 12px;
+  stroke: #757575;
+}
+.envelope-size:hover {
+  stroke: var(--accent-color);
 }
 .smartphone-size {
   width: 10px;
   height: 16px;
 }
-.icon {
+.smartphone-size:hover {
+  stroke: var(--accent-color);
+}
+.icon-conteiner {
   width: 270px;
   height: 120px;
+  background-color: #f5f4fa;
+}
+.icon {
+  width: 70px;
+  height: 70px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-right: 100px;
+  margin-left: 100px;
 }
 .social-networks {
   display: flex;
   padding-left: 32px;
   padding-right: 32px;
   padding-top: 16px;
+  justify-content: space-between;
 }
 .social-networks-item:not(:last-child) {
   margin-right: 10px;
 }
 .social-networks-size {
-  width: 44px;
-  height: 44px;
-  fill: #afb1b8;
-}
-.social-networks-size:hover {
-  fill: brown;
-}
-
-.social-networks-link {
-  fill: green;
-}
-.social-networks-link:hover svg,
-.social-networks-link:focus svg {
-  fill: var(--accent-color);
+  width: 20px;
+  height: 20px;
+  color: #afb1b8;
 }
 
 .social-networks-link:hover svg,
@@ -66,19 +72,26 @@ body {
 .client-item:not(:last-child) {
   margin-right: 30px;
 }
-.clent-item {
-}
-.client-icon {
+.client-item {
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
+}
+.client-item:hover {
+  border: 1px solid var(--accent-color);
+}
+.client-icon {
+  width: 106px;
+  height: 60px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 32px;
+  margin-right: 32px;
   fill: #afb1b8;
 }
-.client-example:hover .client-icon {
-  fill: var(--accent-color);
-  border-color: var(--accent-color);
+.client-icon:hover {
+  fill: #2196f3;
 }
-
 p,
 h1,
 h2,
@@ -154,6 +167,7 @@ img {
   font-weight: 700;
   color: var(--title-text-color);
   margin-bottom: 10px;
+  padding-top: 30px;
 }
 .benefit {
   width: 270px;
