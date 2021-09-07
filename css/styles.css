@@ -33,6 +33,7 @@ body {
   height: 120px;
   background-color: #f5f4fa;
   padding: 25px 100px;
+  border-radius: 4px;
 }
 .icon {
   width: 70px;
@@ -206,9 +207,13 @@ img {
   width: 370px;
   height: 404px;
 }
-.portfolio-list-item:hover,
-.portfolio-list-item:focus {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+.portfolio-list-item-link {
+  display: block;
+}
+.portfolio-list-item-link:hover,
+.portfolio-list-item-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .img {
   display: block;
@@ -347,6 +352,13 @@ img {
   color: var(--primary-white-color);
 }
 .contact-footer {
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+}
+.contact-footer:hover {
+  color: var(--primary-white-color);
+}
+.contact-footer-link {
   line-height: 1.7;
   color: var(--primary-white-color);
 }
