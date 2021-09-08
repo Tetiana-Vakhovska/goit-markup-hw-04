@@ -32,7 +32,9 @@ body {
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
-  padding: 25px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 4px;
 }
 .icon {
@@ -65,10 +67,12 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
-.social-networks-size:hover {
+.social-networks-size:hover,
+.social-networks-size:focus {
   fill: var(--primary-white-color);
 }
-.social-networks-link:hover {
+.social-networks-link:hover,
+.social-networks-link:focus {
   background-color: var(--accent-color);
   border-radius: 50%;
   border: none;
@@ -249,6 +253,8 @@ img {
 }
 .member-team {
   border-radius: 0 0 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .about-team-member {
   padding: 30px 0;
@@ -263,6 +269,7 @@ img {
 }
 .position {
   font-size: 16px;
+  margin-top: 10px;
 }
 .link-nav {
   font-size: 14px;
@@ -289,7 +296,7 @@ img {
   font-size: 16px;
   line-height: 1.6;
   font-weight: 500;
-  color: var(---title-text-color);
+  color: #212121;
   background: var(--button-bg-color);
   cursor: pointer;
   padding: 6px 22px;
@@ -324,6 +331,9 @@ img {
 .main-nav {
   display: flex;
   align-items: center;
+}
+.container-main-portfolio {
+  stroke: #ececec;
 }
 .contact-link {
   font-size: 14px;
@@ -417,7 +427,8 @@ img {
   align-items: center;
 }
 
-.social-networks-link-footer:hover {
+.social-networks-link-footer:hover,
+.social-networks-link-footer:focus {
   border-radius: 50%;
   background-color: var(--accent-color);
 }
