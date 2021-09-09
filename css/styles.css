@@ -80,12 +80,6 @@ body {
 .client-item:not(:last-child) {
   margin-right: 30px;
 }
-.client-item {
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
 .client-example {
   display: flex;
   width: 170px;
@@ -93,6 +87,7 @@ body {
   border: 1px solid #afb1b8;
   align-items: center;
   justify-content: center;
+  border-radius: 4px;
   color: #afb1b8;
 }
 .client-icon {
